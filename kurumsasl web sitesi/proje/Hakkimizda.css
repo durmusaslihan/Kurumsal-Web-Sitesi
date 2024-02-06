@@ -1,0 +1,378 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-family: "Rubik", sans-serif;
+}
+
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100px;
+    padding: 10px 90px;
+    box-sizing: border-box;
+    background: rgb(205, 179, 139 ,0.6);
+    transition: background-color 0.4s ease-in-out;
+}
+
+nav.scrolled {
+    background-color: #cdb38b;
+    opacity: 1;
+    transition: 0.4s;
+
+}
+
+nav .logo img {
+    height: 6%;
+    width: 6%;
+    float: left;
+}
+
+nav ul {
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li a {
+    line-height: 80px;
+    color: black;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.4s ease-in-out;
+    
+}
+
+nav ul li a:hover {
+    color: white;
+    transition: 0.4s;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.ilk img{
+    width: 100%;
+    height: 60vh;
+}
+
+.yarim {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f2f2f2;
+    align-items: center;
+    margin: 50px 0 20px 0;
+    margin: auto;
+    margin-top: 25px;
+}
+.aktif1{
+   
+    color: white;
+}
+
+
+.yazi99{
+    max-width: 7000px;
+    padding: 40px 480px;
+    box-sizing: border-box;
+
+}
+.yazi99 h3{
+    margin-bottom: 10px;
+}
+.yazi99 p{
+    padding-block: 5px;
+}
+
+.su1{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+.su2 ol h2{
+ padding-bottom: 10px;
+}
+
+.su2{
+    display: flex;
+    justify-content: space-evenly;
+    padding-block: 20px;
+}
+
+.su2 ul{
+    list-style-type: square;
+    margin-left: 60px;
+}
+
+
+
+/* #f5f7f7  #ebebeb */
+
+    /* .ilk{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 100px;
+        width: 100%;
+    }
+
+    .basla{
+        display: flex;
+        justify-content: center;
+        padding: 1% 0;
+    }
+
+
+    .sag{   
+        text-align: right;
+    }
+
+    .sol{   
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    
+    .div1{
+        background-color: #ebebeb;
+        display: flex;
+        left: 100px;
+        border-radius: 20px;
+        margin: auto;
+        width: 95%;
+        margin-top: 1%;
+        margin-bottom: 1%;
+    } */
+    .whatsapp {
+        position: fixed;
+        z-index: 2;
+        left: 30px;
+        opacity: 0;
+        bottom: -50px;
+        padding: 24px;
+        animation: fade-up 1000ms forwards;
+        animation-delay: 500ms;
+    }
+    
+    @keyframes fade-up {
+        100% {
+            bottom: 50px;
+            opacity: 1;
+        }
+    }
+    
+    .whatsapp .whatsapp-btn {
+        display: inline-block;
+        transition: all 400ms;
+    }
+    .whatsapp .whatsapp-btn img{
+        width: 60px;
+        height: 60px;
+    }
+    
+    .whatsapp .whatsapp-btn:hover {
+        transform: scale(1.2);
+    }
+    
+    .whatsapp span {
+        position: absolute;
+        top: 0;
+        left: 13px;
+        font-weight: bold;
+        color: #075e54;
+        transform: rotate(20deg) translateX(10px);
+        opacity: 0;
+        transition: all 400ms;
+    }
+    
+    .whatsapp .whatsapp-btn:hover+span {
+        transform: rotate(0deg) translateX(0px);
+        opacity: 1;
+    }
+    
+
+    .div4{
+        background-color: #ebebeb;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        width: 93%;
+        padding: 1%;
+        border-radius: 20px;
+        margin-bottom: 1%;
+    }
+
+    .div5{
+        background-color: #ebebeb;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        width: 95%;
+        padding: 1% 0;
+        border-radius: 20px;
+        
+    }
+
+    
+    .son{
+        margin: 1% 0;
+        display: flex; 
+        justify-content: center; 
+    }
+
+
+    
+.name {
+
+    padding: 50px;
+}
+
+.name .hr1 {
+    margin-right: 900px;
+    opacity: 0.6;
+}
+
+.name .hr2 {
+    margin-left: 900px;
+    opacity: 0.6;
+}
+
+.name h2 {
+    text-align: center;
+    opacity: 0.6;
+    font-size: 35px;
+}
+
+.name1 {
+    margin: 0 80px 60px 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact1 a {
+    margin-left: 12px;
+}
+.contact1 a img:hover{
+    border: 1px solid black;
+    padding: 5px;
+    transition: 0.4s;
+    background-color: #cdb38b;
+    border-radius: 30px;
+}
+.contact1 a img{
+    box-sizing: border-box;
+}
+
+.contact p {
+    font-weight: bold;
+    margin-top: 0;
+}
+
+
+    /* #f5f7f7  #ebebeb */ 
+
+    .footer{
+        margin: -0.55%;
+    }
+
+    .flex-kullanim{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: black;
+        color: white;
+    }
+    .ozet img{
+      width: 100px;
+      height: 100px;
+      margin-left: 40px ;
+      border-radius: 53px;
+    }
+    
+    section{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 10px 0 10px;
+    }
+    section ul li{
+        list-style-type: none;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        padding: 10px 20px; 
+    }
+    section ul li a{
+        text-decoration: none;
+        font-weight: bold;
+        color: white;
+        border-bottom: 1px solid  transparent;
+    }
+    section ul li a:hover{
+        transition: .3s;
+        color: #cdb38b;
+        border-color: #cdb38b;
+        padding-bottom: 1px;
+    }
+    .font-design{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 5px;
+        color: white;
+        font-size: 1rem;
+    }
+    
+    .footer-ikon{padding: 1rem; margin: 1rem; float: left;}
+    
+    .footer-ikon i{
+        color: white;
+        padding: 0.40rem ;
+        margin-right: 0.60rem;
+        border-radius: 50%;
+        border: 1px solid white;
+        font-size: 1.1rem;
+        transition: all 0.4s ease;
+    }
+    .footer-ikon :hover i{
+        background-color: #cdb38b;
+        color:white;
+    }
+    .footer-ikon a{
+        color:white;
+        text-decoration: none;
+    
+    } 
+    .footer1{
+        width: 100%;
+        background-color: black;
+        color: white;
+        padding: 10px;
+        text-align: center;
+    }
+    .footer1 a{
+        color: white;
+    }
+    .footer1 a:hover{
+        color: #cdb38b;
+    }
+   
+    
+
+
+
+
+
